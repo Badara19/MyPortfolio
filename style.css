@@ -1,0 +1,514 @@
+:root {
+    --ink: #0F1626;
+    --ink-soft: #1A2338;
+    --paper: #F7F6F2;
+    --paper-dim: #EEECE4;
+    --amber: #E8A33D;
+    --teal: #1B7A6B;
+    --muted: #5B6472;
+    --border-color: rgba(15, 22, 38, 0.09);
+
+    /* kept for backward compatibility with any inline usage */
+    --primary-color: var(--ink);
+    --accent-color: var(--muted);
+    --light-gray: var(--paper-dim);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    color: var(--ink);
+    line-height: 1.6;
+    background: var(--paper);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* ---------- NAV ---------- */
+.navbar {
+    background: rgba(15, 22, 38, 0.92) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    background: rgba(10, 15, 26, 0.98) !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.navbar-brand .dot {
+    color: var(--amber);
+}
+
+.navbar-nav .nav-link {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: rgba(247, 246, 242, 0.75) !important;
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--amber) !important;
+}
+
+/* ---------- HERO / TERMINAL ---------- */
+header {
+    background: radial-gradient(circle at 80% 0%, rgba(232, 163, 61, 0.18) 0%, transparent 45%), var(--ink);
+    color: var(--paper);
+    padding: 200px 0 140px;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: var(--paper);
+    clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+}
+
+header .display-1 {
+    color: var(--paper);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--amber);
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.eyebrow::before {
+    content: "$ ";
+    opacity: 0.7;
+}
+
+.role-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.2rem !important;
+}
+
+.terminal {
+    background: var(--ink-soft);
+    border: 1px solid rgba(247, 246, 242, 0.1);
+    border-radius: 12px;
+    max-width: 640px;
+    margin: 1rem auto 0;
+    box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.terminal-bar {
+    display: flex;
+    gap: 6px;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(247, 246, 242, 0.08);
+}
+
+.terminal-bar span {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.terminal-bar span:nth-child(1) { background: #ff5f56; }
+.terminal-bar span:nth-child(2) { background: #ffbd2e; }
+.terminal-bar span:nth-child(3) { background: #27c93f; }
+
+.terminal-body {
+    padding: 22px 24px 26px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.92rem;
+    color: #c9d1d9;
+    line-height: 1.7;
+}
+
+.terminal-body .prompt { color: var(--teal); }
+.terminal-body .prompt-alt { color: var(--amber); }
+.terminal-body .out { color: #9aa4b2; }
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 1em;
+    background: var(--amber);
+    vertical-align: text-bottom;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+.btn-custom {
+    padding: 14px 35px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.btn-light.btn-custom {
+    background: var(--amber);
+    border-color: var(--amber);
+    color: var(--ink);
+    font-weight: 600;
+}
+
+.btn-light.btn-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -8px rgba(232, 163, 61, 0.5);
+}
+
+.btn-outline-light.btn-custom:hover {
+    transform: translateY(-2px);
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+    padding: 120px 0;
+}
+
+.section-label {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--teal);
+    font-size: 0.85rem;
+    margin-bottom: 0.6rem;
+    display: inline-block;
+}
+
+.section-label::before {
+    content: "$ ";
+    color: var(--muted);
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin-bottom: 50px;
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--amber);
+    margin: 20px auto 0;
+}
+
+/* ---------- ABOUT ---------- */
+.about-photo-wrap {
+    position: relative;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.about-photo-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 16px -16px -16px 16px;
+    border: 2px solid var(--amber);
+    border-radius: 12px;
+    z-index: -1;
+}
+
+/* ---------- CARDS ---------- */
+.card {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(15, 22, 38, 0.12);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    color: var(--ink);
+    margin-bottom: 25px;
+    background: var(--paper-dim);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.card:hover .skill-icon {
+    background: var(--ink);
+    color: var(--paper);
+}
+
+/* ---------- SKILLS GRID ---------- */
+.skill-chip {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.4rem 1rem;
+    text-align: center;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.skill-chip:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 30px -16px rgba(15, 22, 38, 0.2);
+    border-color: var(--amber);
+}
+
+.skill-chip i {
+    font-size: 1.7rem;
+    color: var(--teal);
+    margin-bottom: 0.6rem;
+    display: block;
+}
+
+.skill-chip span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    color: var(--ink);
+}
+
+/* ---------- FORMATION TIMELINE ---------- */
+.timeline-item {
+    border-left: 2px solid var(--border-color);
+    padding-left: 1.8rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--amber);
+    border: 3px solid var(--paper);
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-year {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--teal);
+    font-size: 0.8rem;
+}
+
+/* ---------- PROJECT FILTERS ---------- */
+.filter-bar {
+    text-align: center;
+}
+
+.filter-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    border: 1px solid var(--border-color);
+    background: #fff;
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 0.4rem 1rem;
+    margin: 0 6px 10px 0;
+    transition: all 0.15s ease;
+    cursor: pointer;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--paper);
+}
+
+.badge-tech {
+    background: var(--paper-dim);
+    padding: 6px 15px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0 5px 5px 0;
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* ---------- CONTACT ---------- */
+.btn-linkedin {
+    color: #0077b5;
+    border-color: #0077b5;
+}
+
+.btn-linkedin:hover {
+    background-color: #0077b5;
+    color: white;
+}
+
+.btn-whatsapp {
+    color: #25d366;
+    border-color: #25d366;
+}
+
+.btn-whatsapp:hover {
+    background-color: #25d366;
+    color: white;
+}
+
+#contact .card {
+    border-radius: 20px !important;
+}
+
+footer {
+    background: var(--ink);
+    padding: 40px 0;
+    color: rgba(247, 246, 242, 0.5);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* =========================================================
+   RESPONSIVE — TABLETTE (≤ 991px)
+   ========================================================= */
+@media (max-width: 991.98px) {
+    header {
+        padding: 160px 0 110px;
+    }
+
+    section {
+        padding: 90px 0;
+    }
+
+    .section-title {
+        font-size: 1.9rem;
+    }
+
+    .terminal {
+        max-width: 90%;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE — MOBILE (≤ 767px)
+   ========================================================= */
+@media (max-width: 767.98px) {
+    header {
+        padding: 140px 0 100px;
+    }
+
+    header .display-1 {
+        font-size: 2.6rem;
+    }
+
+    .role-mono {
+        font-size: 1rem !important;
+    }
+
+    .eyebrow {
+        font-size: 0.75rem;
+    }
+
+    .terminal {
+        max-width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .terminal-body {
+        font-size: 0.78rem;
+        padding: 18px 16px 20px;
+        line-height: 1.6;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 35px;
+    }
+
+    .about-photo-wrap {
+        max-width: 260px;
+    }
+
+    .about-photo-wrap::after {
+        inset: 10px -10px -10px 10px;
+    }
+
+    .filter-btn {
+        font-size: 0.72rem;
+        padding: 0.35rem 0.8rem;
+    }
+
+    .skill-chip {
+        padding: 1rem 0.6rem;
+    }
+
+    .skill-chip i {
+        font-size: 1.4rem;
+    }
+
+    .skill-chip span {
+        font-size: 0.72rem;
+    }
+
+    .terminal-body div {
+        word-break: break-word;
+    }
+
+    #contact .card {
+        padding: 2rem 1.25rem !important;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE — PETITS MOBILES (≤ 420px)
+   ========================================================= */
+@media (max-width: 420px) {
+    header .display-1 {
+        font-size: 2.1rem;
+    }
+
+    .terminal-body {
+        font-size: 0.7rem;
+    }
+
+    .d-flex.justify-content-center.gap-4 {
+        flex-direction: column;
+        gap: 0.75rem !important;
+    }
+
+    .btn-custom {
+        width: 100%;
+    }
+}
