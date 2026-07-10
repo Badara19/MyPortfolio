@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badara Lo | Développeur Logiciel & Web</title>
+    <meta name="description"
+        content="Portfolio de Badara Lo, étudiant en informatique spécialisé en développement logiciel et web.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">BADARA<span class="dot">.</span>LO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto font-weight-500">
+                    <li class="nav-item"><a class="nav-link px-3" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#formation">Formation</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center">
+        <div class="container" data-aos="zoom-in">
+            <span class="eyebrow">whoami</span>
+            <h1 class="display-1 fw-bold mb-3">Badara Lo</h1>
+            <p class="lead fs-3 mb-4 opacity-75 role-mono">Développeur Logiciel & Web Junior</p>
+
+            <div class="terminal">
+                <div class="terminal-bar"><span></span><span></span><span></span></div>
+                <div class="terminal-body">
+                    <div><span class="prompt">badara@isi</span>:<span class="prompt-alt">~</span>$ gcc profil.c -o badara</div>
+                    <div class="out">Compilation réussie. Aucune erreur, quelques ambitions.</div>
+                    <div><span class="prompt">badara@isi</span>:<span class="prompt-alt">~</span>$ ./badara --status</div>
+                    <div class="out">Licence 2 Génie Logiciel · ISI Dakar</div>
+                    <div class="out">Recherche : stage développement logiciel / web</div>
+                    <div><span class="prompt">badara@isi</span>:<span class="prompt-alt">~</span>$ <span class="cursor"></span></div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center gap-4 mt-5">
+                <a href="#projects" class="btn btn-light btn-custom">Mes Réalisations</a>
+                <a href="#contact" class="btn btn-outline-light btn-custom">Me contacter</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <span class="section-label">cat about.md</span>
+                    <h2 class="section-title text-start">Expertise & Passion</h2>
+                    <p class="fs-5 text-muted mb-4">
+                        Je m'appelle Badara Lo, étudiant passionné par l'ingénierie logicielle. Je forge des solutions
+                        numériques où la rigueur du C/C++ rencontre la modernité du Web.</strong>.
+                    </p>
+                    <p class="text-muted mb-4">
+                        Mon but est de concevoir des outils performants, scalables et dotés d'une interface intuitive.
+                        Actuellement en Licence 2 à l'Institut Superieur d'Informatique a Dakar, je suis à la recherche
+                        d'un stage pour mettre mes compétences au service de projets innovants et relever de nouveaux
+                        défis techniques.
+                    </p>
+                    <a href="CV_Badara_Lo.pdf" class="btn btn-dark btn-custom mt-2" target="_blank">
+                        <i class="fa fa-download me-2"></i> Télécharger le CV
+                    </a>
+                </div>
+                <div class="col-lg-6 text-center" data-aos="fade-left">
+                    <div class="about-photo-wrap">
+                        <img src="PP.jpeg" alt="Badara Lo" class="img-fluid rounded-3 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-light">
+        <div class="container text-center">
+            <span class="section-label">ls -la skills/</span>
+            <h2 class="section-title">Compétences techniques</h2>
+            <div class="row g-3 justify-content-center mt-2">
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="0">
+                    <div class="skill-chip"><i class="fa-solid fa-c"></i><span>C</span></div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="50">
+                    <div class="skill-chip"><i class="fa-solid fa-plus"></i><span>C++</span></div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-chip"><i class="fa-brands fa-java"></i><span>Java</span></div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="150">
+                    <div class="skill-chip"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-chip"><i class="fa-brands fa-php"></i><span>PHP</span></div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="250">
+                    <div class="skill-chip"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-chip"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="350">
+                    <div class="skill-chip"><i class="fa-brands fa-html5"></i><span>HTML5/CSS3</span></div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-chip"><i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span></div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="450">
+                    <div class="skill-chip"><i class="fa-brands fa-github"></i><span>Git/GitHub</span></div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-chip"><i class="fa-solid fa-flask"></i><span>Flask</span></div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="550">
+                    <div class="skill-chip"><i class="fa-brands fa-wordpress"></i><span>WordPress</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formation">
+        <div class="container">
+            <span class="section-label">cat formation.log</span>
+            <h2 class="section-title text-start">Parcours Académique</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-year">2022</div>
+                        <h5 class="fw-bold mt-1 mb-1">Baccalauréat en Série S2</h5>
+                        <p class="text-muted mb-0"> Cours Secondaire Sacré-Cœur</p>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-year">2024/2025</div>
+                        <h5 class="fw-bold mt-1 mb-1">Licence 1 Informatique</h5>
+                        <p class="text-muted mb-0">Institut Supérieur d'Informatique (ISI), Dakar — bases de la
+                            programmation, algorithmique, réseaux.</p>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-year">2025/2026</div>
+                        <h5 class="fw-bold mt-1 mb-1">Licence 2 Génie Logiciel</h5>
+                        <p class="text-muted mb-0">Institut Supérieur d'Informatique (ISI), Dakar — C, Java, Python,
+                            JavaScript, PHP, réseaux, algorithmique & structures de données, UML, droit des TIC.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="mt-5">
+        <div class="container">
+            <span class="section-label">ls -la projects/</span>
+            <h2 class="section-title">Réalisations Récentes</h2>
+
+            <div class="filter-bar mb-4">
+                <button class="filter-btn active" data-filter="all">tous</button>
+                <button class="filter-btn" data-filter="web">web</button>
+                <button class="filter-btn" data-filter="c">c / c++</button>
+                <button class="filter-btn" data-filter="python">python</button>
+                <button class="filter-btn" data-filter="java">java</button>
+            </div>
+
+            <div class="row g-4" id="project-grid">
+                <div class="col-md-6 col-lg-4 project-item" data-cat="web" data-aos="fade-up">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="bg-success d-flex align-items-center justify-content-center" style="height: 120px;">
+                            <i class="fa-brands fa-wordpress fa-3x text-white opacity-50"></i>
+                        </div>
+                        <div class="card-body p-3 text-center">
+                            <h6 class="fw-bold mb-2">GalsenArt — E-commerce Artisanat</h6>
+                            <p class="text-muted small mb-3" style="font-size: 0.8rem;">Boutique en ligne pour l'artisanat sénégalais, avec gestion des paiements et migration serveur.</p>
+                            <div class="mb-3">
+                                <span class="badge-tech" style="font-size: 0.7rem;">WordPress</span>
+                                <span class="badge-tech" style="font-size: 0.7rem;">WooCommerce</span>
+                            </div>
+                            <a href="https://galsenart.42web.io/?i=1" target="_blank" class="btn btn-dark btn-sm rounded-pill px-3 me-1" style="font-size: 0.75rem;">
+                                <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Voir le site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 project-item" data-cat="c" data-aos="fade-up">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="bg-dark d-flex align-items-center justify-content-center" style="height: 120px;">
+                            <i class="fa-solid fa-prescription-bottle-medical fa-3x text-white opacity-50"></i>
+                        </div>
+                        <div class="card-body p-3 text-center">
+                            <h6 class="fw-bold mb-2">Gestion de Pharmacie</h6>
+                            <p class="text-muted small mb-3" style="font-size: 0.8rem;">Logiciel robuste en C avec
+                                manipulation de fichiers binaires pour le stock.</p>
+                            <div class="mb-3">
+                                <span class="badge-tech" style="font-size: 0.7rem;">Langage C</span>
+                                <span class="badge-tech" style="font-size: 0.7rem;">Fichiers</span>
+                            </div>
+                            <a href="https://github.com/Badara19/sunupharma-stock-app/tree/dev-Badara" target="_blank"
+                                class="btn btn-outline-dark btn-sm rounded-pill px-3" style="font-size: 0.75rem;">
+                                <i class="fa-brands fa-github me-1"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 project-item" data-cat="web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="bg-primary d-flex align-items-center justify-content-center"
+                            style="height: 120px; background: linear-gradient(45deg, #4F5B93, #24292e) !important;">
+                            <i class="fa-solid fa-tasks fa-3x text-white opacity-50"></i>
+                        </div>
+                        <div class="card-body p-3 text-center">
+                            <h6 class="fw-bold mb-2">Gestion des Tâches</h6>
+                            <p class="text-muted small mb-3" style="font-size: 0.8rem;">App Fullstack avec rôles
+                                utilisateurs et base de données MySQL.</p>
+                            <div class="mb-3">
+                                <span class="badge-tech" style="font-size: 0.7rem;">PHP</span>
+                                <span class="badge-tech" style="font-size: 0.7rem;">MySQL</span>
+                            </div>
+                            <a href="https://github.com/Badara19/GestionTaches" target="_blank"
+                                class="btn btn-outline-dark btn-sm rounded-pill px-3" style="font-size: 0.75rem;">
+                                <i class="fa-brands fa-github me-1"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 project-item" data-cat="c" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="bg-secondary d-flex align-items-center justify-content-center"
+                            style="height: 120px;">
+                            <i class="fa-solid fa-scissors fa-3x text-white opacity-50"></i>
+                        </div>
+                        <div class="card-body p-3 text-center">
+                            <h6 class="fw-bold mb-2">Gestion Atelier Couture</h6>
+                            <p class="text-muted small mb-3" style="font-size: 0.8rem;">Application POO en C++ pour le
+                                suivi clients et employés.</p>
+                            <div class="mb-3">
+                                <span class="badge-tech" style="font-size: 0.7rem;">C++</span>
+                                <span class="badge-tech" style="font-size: 0.7rem;">POO</span>
+                            </div>
+                            <a href="https://github.com/Badara19/Projet-Complet-C-" target="_blank"
+                                class="btn btn-outline-dark btn-sm rounded-pill px-3" style="font-size: 0.75rem;">
+                                <i class="fa-brands fa-github me-1"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 project-item" data-cat="web" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="bg-info d-flex align-items-center justify-content-center"
+                            style="height: 120px; background-color: #0abde3 !important;">
+                            <i class="fa-solid fa-window-maximize fa-3x text-white opacity-50"></i>
+                        </div>
+                        <div class="card-body p-3 text-center">
+                            <h6 class="fw-bold mb-2">Site Vitrine Professionnel</h6>
+                            <p class="text-muted small mb-3" style="font-size: 0.8rem;">Conception d'une interface
+                                responsive et optimisée pour l'expérience utilisateur.</p>
+                            <div class="mb-3">
+                                <span class="badge-tech" style="font-size: 0.7rem;">HTML5</span>
+                                <span class="badge-tech" style="font-size: 0.7rem;">CSS3</span>
+                            </div>
+                            <a href="https://github.com/Badara19/sitevitrine" target="_blank"
+                                class="btn btn-outline-dark btn-sm rounded-pill px-3" style="font-size: 0.75rem;">
+                                <i class="fa-brands fa-github me-1"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 project-item" data-cat="python" data-aos="fade-up">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="bg-warning d-flex align-items-center justify-content-center" style="height: 120px;">
+                            <i class="fa-brands fa-python fa-3x text-white opacity-50"></i>
+                        </div>
+                        <div class="card-body p-3 text-center">
+                            <h6 class="fw-bold mb-2">Gestion Daara — Version Python</h6>
+                            <p class="text-muted small mb-3" style="font-size: 0.8rem;">Application de gestion de la progression des Talibés, développée en équipe avec Flask et PostgreSQL.</p>
+                            <div class="mb-3">
+                                <span class="badge-tech" style="font-size: 0.7rem;">Python</span>
+                                <span class="badge-tech" style="font-size: 0.7rem;">Flask</span>
+                                <span class="badge-tech" style="font-size: 0.7rem;">PostgreSQL</span>
+                            </div>
+                            <a href="https://github.com/ousmane78575/gestion-daara_groupe-python/tree/Badara" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill px-3" style="font-size: 0.75rem;">
+                                <i class="fa-brands fa-github me-1"></i> GitHub
+                            </a>
+                            <span class="badge bg-secondary rounded-pill px-2 ms-1" style="font-size: 0.65rem;">Démo à venir</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 project-item" data-cat="java" data-aos="fade-up">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="bg-danger d-flex align-items-center justify-content-center" style="height: 120px;">
+                            <i class="fa-solid fa-mug-hot fa-3x text-white opacity-50"></i>
+                        </div>
+                        <div class="card-body p-3 text-center">
+                            <h6 class="fw-bold mb-2">Gestion Daara — Version Java</h6>
+                            <p class="text-muted small mb-3" style="font-size: 0.8rem;">Version desktop du projet Daara avec interface Swing, persistance via Hibernate et modélisation UML.</p>
+                            <div class="mb-3">
+                                <span class="badge-tech" style="font-size: 0.7rem;">Java</span>
+                                <span class="badge-tech" style="font-size: 0.7rem;">Hibernate</span>
+                                <span class="badge-tech" style="font-size: 0.7rem;">Swing</span>
+                            </div>
+                            <a href="https://github.com/Badara19/projet-daara-Java/tree/Badara" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill px-3" style="font-size: 0.75rem;">
+                                <i class="fa-brands fa-github me-1"></i> GitHub
+                            </a>
+                            <span class="badge bg-secondary rounded-pill px-2 ms-1" style="font-size: 0.65rem;">Démo à venir</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-light py-5">
+        <div class="container" data-aos="zoom-in">
+            <div class="card p-4 p-md-5 border-0 shadow-lg mx-auto" style="max-width: 800px; border-radius: 20px;">
+                <span class="section-label d-block text-center">./contact --init</span>
+                <h2 class="fw-bold text-center mb-4">Un projet ou une opportunité ?</h2>
+                <p class="text-center text-muted fs-5 mb-5">Je suis à la recherche d’un stage. N’hésitez pas à me
+                    contacter !</p>
+
+                <div class="row g-4 text-center justify-content-center align-items-center">
+                    <div class="col-md-6">
+                        <a href="mailto:badaralo455@gmail.com" class="text-decoration-none text-dark fw-bold fs-5">
+                            <i class="fa-solid fa-envelope text-primary me-2"></i> badaralo455@gmail.com
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="tel:+221773972838" class="text-decoration-none text-dark fw-bold fs-5">
+                            <i class="fa-solid fa-phone text-success me-2"></i> +221 77 397 28 38
+                        </a>
+                    </div>
+                    <div class="col-auto mt-4">
+                        <a href="https://www.linkedin.com/in/badara-lo-7b185a304/" target="_blank"
+                            class="btn btn-outline-dark btn-linkedin rounded-pill px-4 fw-bold">
+                            <i class="fa-brands fa-linkedin me-2"></i> LinkedIn
+                        </a>
+                    </div>
+                    <div class="col-auto mt-4">
+                        <a href="https://wa.me/221773972838" target="_blank"
+                            class="btn btn-outline-dark btn-whatsapp rounded-pill px-4 fw-bold">
+                            <i class="fa-brands fa-whatsapp me-2"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="mailto:badaralo455@gmail.com" class="btn btn-primary btn-lg px-5 rounded-pill shadow">
+                        <i class="fa-solid fa-paper-plane me-2"></i> Envoyer un message
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-1">© 2026 Badara Lo — Tous droits réservés</p>
+            <small>Développeur Logiciel & Web Junior</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
